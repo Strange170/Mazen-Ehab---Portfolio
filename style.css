@@ -1,0 +1,198 @@
+        :root {
+            --font-family: 'Inter', sans-serif;
+            
+            /* Light Mode Palette */
+            --color-bg: #F8F9FA;
+            --color-bg-alt: #FFFFFF;
+            --color-text: #0B1D51;
+            --color-text-muted: #495057;
+            --color-primary: #8CCDEB;
+            --color-primary-text: #0B1D51; /* Text on primary bg */
+            --color-accent-1: #725CAD;
+            --color-accent-2: #FFE3A9;
+            --color-border: #E0E0E0;
+        }
+
+        html.dark {
+            /* Dark Mode Palette */
+            --color-bg: #0A192F; /* Slightly different from #0B1D51 for more depth */
+            --color-bg-alt: #0B1D51;
+            --color-text: #E0E6F1;
+            --color-text-muted: #A0AEC0;
+            --color-primary: #8CCDEB;
+            --color-primary-text: #0B1D51;
+            --color-accent-1: #725CAD;
+            --color-accent-2: #FFE3A9;
+            --color-border: #2D3748;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        /* Custom Component Styles */
+        .btn-primary {
+            /* --- UPDATED BUTTON STYLES (Font & Tracking) --- */
+            @apply inline-block px-8 py-3 rounded-full font-semibold tracking-normal shadow-lg ease-in-out;
+            background-color: var(--color-primary);
+            color: var(--color-primary-text);
+            /* Updated transition */
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            /* --- UPDATED HOVER EFFECT (Glow) --- */
+            @apply shadow-xl -translate-y-1 scale-105;
+            box-shadow: 0 0 20px 5px var(--color-primary); /* Changed to halo glow */
+            filter: brightness(0.95);
+        }
+        /* Added click-pulse effect */
+        .btn-primary:active {
+            @apply scale-95 -translate-y-0 filter: brightness(0.9);
+        }
+        /* Added accessible focus state */
+        .btn-primary:focus-visible {
+            @apply outline-none ring-4 ring-offset-2 ring-[var(--color-primary)]/70;
+        }
+
+        .btn-secondary {
+            /* --- UPDATED BUTTON STYLES (Font & Tracking) --- */
+            @apply inline-block px-8 py-3 rounded-full font-semibold tracking-normal ease-in-out;
+            background-color: transparent;
+            color: var(--color-primary); /* Text color is primary */
+            border: 2px solid var(--color-primary); /* Border color is primary */
+            /* Updated transition */
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-secondary:hover {
+            /* --- UPDATED HOVER EFFECT (Glow) --- */
+            @apply -translate-y-1 scale-105 shadow-lg;
+            background-color: var(--color-primary);
+            color: var(--color-primary-text);
+            box-shadow: 0 0 20px 5px var(--color-primary); /* Added halo glow */
+        }
+        /* Added click-pulse effect */
+        .btn-secondary:active {
+            @apply scale-95 -translate-y-0;
+        }
+        /* Added accessible focus state */
+        .btn-secondary:focus-visible {
+            @apply outline-none ring-4 ring-offset-2 ring-[var(--color-primary)]/70;
+        }
+
+        .link-primary {
+            @apply font-medium relative;
+            color: var(--color-primary);
+        }
+        .link-primary::after {
+            content: '';
+            @apply absolute bottom-0 left-0 w-0 h-[2px] transition-all duration-300;
+            background-color: var(--color-primary);
+        }
+        .link-primary:hover::after {
+            @apply w-full;
+        }
+        
+        .nav-link {
+            @apply relative px-1 py-1 text-sm font-medium transition-colors;
+            color: var(--color-text-muted);
+        }
+        .nav-link:hover {
+            color: var(--color-primary);
+        }
+        /* --- Animated underline for nav links --- */
+        .nav-link::after {
+            content: '';
+            @apply absolute bottom-0 left-0 h-[2px] transition-all duration-300 origin-left;
+            background-color: var(--color-primary);
+            width: 100%;
+            transform: scaleX(0); /* Start scaled to 0 */
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            transform: scaleX(1); /* Scale to 100% on hover/active */
+        }
+        .nav-link.active {
+            color: var(--color-primary);
+        }
+        
+        /* --- Card Hover Styles --- */
+        .portfolio-card {
+            @apply transition-all duration-300 ease-in-out;
+        }
+        .portfolio-card:hover {
+            @apply -translate-y-2 shadow-2xl;
+        }
+        
+        .testimonial-card {
+             @apply p-6 rounded-lg transition-all duration-300 ease-in-out;
+             background-color: var(--color-bg-alt); 
+             border: 1px solid var(--color-border);
+        }
+        .testimonial-card:hover {
+             @apply -translate-y-2 shadow-2xl;
+        }
+        
+        /* Modal Styles */
+        #portfolio-modal.hidden {
+            display: none;
+        }
+        
+        /* Instagram Embed Responsive */
+        .instagram-media {
+            margin: 0 auto !important;
+            max-width: 500px !important;
+            width: calc(100% - 32px) !important;
+            border-radius: 8px;
+        }
+
+        /* --- Breathing Shadow Effect --- */
+        .pulse-shadow {
+            animation: pulseShadow 3s infinite ease-in-out;
+        }
+
+        @keyframes pulseShadow {
+            0% {
+                box-shadow: 0 0 15px 5px rgba(140, 205, 235, 0.4); /* color-primary with opacity */
+            }
+            50% {
+                box-shadow: 0 0 30px 10px rgba(140, 205, 235, 0.8); /* Stronger, larger pulse */
+            }
+            100% {
+                box-shadow: 0 0 15px 5px rgba(140, 205, 235, 0.4);
+            }
+        }
+        
+        /* --- Mobile Menu Animation --- */
+        #mobile-menu {
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            transform-origin: top;
+        }
+        #mobile-menu.hidden {
+            transform: scaleY(0.95);
+            opacity: 0;
+            pointer-events: none;
+        }
+        #mobile-menu.block {
+            transform: scaleY(1);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        /* --- Mobile Icon Animation --- */
+        .icon-menu, .icon-close {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .menu-open .icon-menu {
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+        .menu-open .icon-close {
+            transform: rotate(0);
+            opacity: 1;
+        }
+        .icon-close {
+            transform: rotate(-90deg);
+            opacity: 0;
+        }
