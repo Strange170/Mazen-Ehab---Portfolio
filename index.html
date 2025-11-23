@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>Mazen Ehab - Video Editor & Motion Graphics Artist</title>
     <meta name="title" content="Mazen Ehab - Video Editor & Motion Graphics Artist">
-    <meta name="description" content="Portfolio of Mazen Ehab, a 20-year-old video editor and engineering student specializing in After Effects, Premiere Pro, and creating engaging content for social media.">
+    <meta name="description"
+        content="Portfolio of Mazen Ehab, a 20-year-old video editor and engineering student specializing in After Effects, Premiere Pro, and creating engaging content for social media.">
     <meta name="author" content="Mazen Ehab">
-    <meta name="keywords" content="Mazen Ehab, Video Editor, Motion Graphics, After Effects, Premiere Pro, Photoshop, Freelance, Portfolio, Jeddah, Egypt, Content Creator">
+    <meta name="keywords"
+        content="Mazen Ehab, Video Editor, Motion Graphics, After Effects, Premiere Pro, Photoshop, Freelance, Portfolio, Jeddah, Egypt, Content Creator">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mazen-ehab.com/"> <!-- TODO: Update with final URL -->
     <meta property="og:title" content="Mazen Ehab - Video Editor & Motion Graphics Artist">
-    <meta property="og:description" content="Check out the portfolio of Mazen Ehab, a creative video editor specializing in social media content and event videography.">
-    <meta property="og:image" content="https://placehold.co/1200x630/0B1D51/8CCDEB?text=Mazen+Ehab"> <!-- TODO: Update with OG image -->
+    <meta property="og:description"
+        content="Check out the portfolio of Mazen Ehab, a creative video editor specializing in social media content and event videography.">
+    <meta property="og:image" content="https://placehold.co/1200x630/0B1D51/8CCDEB?text=Mazen+Ehab">
+    <!-- TODO: Update with OG image -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mazen-ehab.com/"> <!-- TODO: Update with final URL -->
     <meta property="twitter:title" content="Mazen Ehab - Video Editor & Motion Graphics Artist">
-    <meta property="twitter:description" content="Check out the portfolio of Mazen Ehab, a creative video editor specializing in social media content and event videography.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/0B1D51/8CCDEB?text=Mazen+Ehab"> <!-- TODO: Update with OG image -->
+    <meta property="twitter:description"
+        content="Check out the portfolio of Mazen Ehab, a creative video editor specializing in social media content and event videography.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/0B1D51/8CCDEB?text=Mazen+Ehab">
+    <!-- TODO: Update with OG image -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +49,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -62,15 +69,18 @@
     }
     </script>
 </head>
+
 <body class="transition-colors duration-300">
 
     <!-- Header -->
-    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[var(--color-bg)]/80 backdrop-blur-md border-b border-[var(--color-border)]" data-aos="fade-down">
+    <header id="header"
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[var(--color-bg)]/80 backdrop-blur-md border-b border-[var(--color-border)]"
+        data-aos="fade-down">
         <nav class="container mx-auto max-w-6xl px-4 py-4 flex justify-between items-center">
             <a href="#home" class="text-2xl font-bold" style="color: var(--color-primary);">
                 Mazen Ehab
             </a>
-            
+
             <!-- Desktop Nav -->
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#home" class="nav-link active">Home</a>
@@ -78,32 +88,40 @@
                 <a href="#work" class="nav-link">Work</a>
                 <a href="#testimonials" class="nav-link">Testimonials</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <button id="dark-mode-toggle" aria-label="Toggle dark mode" class="ml-4 p-2 rounded-full" style="background-color: var(--color-bg-alt); border: 1px solid var(--color-border);">
+                <button id="dark-mode-toggle" aria-label="Toggle dark mode" class="ml-4 p-2 rounded-full"
+                    style="background-color: var(--color-bg-alt); border: 1px solid var(--color-border);">
                     <i data-lucide="sun" class="block dark:hidden" style="color: var(--color-text);"></i>
                     <i data-lucide="moon" class="hidden dark:block" style="color: var(--color-text);"></i>
                 </button>
             </div>
-            
+
             <!-- Mobile Menu Button -->
             <div class="md:hidden flex items-center">
-                <button id="dark-mode-toggle-mobile" aria-label="Toggle dark mode" class="mr-2 p-2 rounded-full" style="background-color: var(--color-bg-alt); border: 1px solid var(--color-border);">
+                <button id="dark-mode-toggle-mobile" aria-label="Toggle dark mode" class="mr-2 p-2 rounded-full"
+                    style="background-color: var(--color-bg-alt); border: 1px solid var(--color-border);">
                     <i data-lucide="sun" class="block dark:hidden w-5 h-5" style="color: var(--color-text);"></i>
                     <i data-lucide="moon" class="hidden dark:block w-5 h-5" style="color: var(--color-text);"></i>
                 </button>
                 <button id="mobile-menu-btn" aria-label="Open navigation menu" class="p-2 relative w-6 h-6">
-                    <i data-lucide="menu" class="icon-menu w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="color: var(--color-text);"></i>
-                    <i data-lucide="x" class="icon-close w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="color: var(--color-text);"></i>
+                    <i data-lucide="menu"
+                        class="icon-menu w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        style="color: var(--color-text);"></i>
+                    <i data-lucide="x"
+                        class="icon-close w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        style="color: var(--color-text);"></i>
                 </button>
             </div>
         </nav>
-        
+
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 shadow-lg" style="background-color: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 shadow-lg"
+            style="background-color: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
             <div class="flex flex-col space-y-2 p-4">
                 <a href="#home" class="nav-link mobile-nav-link text-center py-2" data-target="home">Home</a>
                 <a href="#about" class="nav-link mobile-nav-link text-center py-2" data-target="about">About</a>
                 <a href="#work" class="nav-link mobile-nav-link text-center py-2" data-target="work">Work</a>
-                <a href="#testimonials" class="nav-link mobile-nav-link text-center py-2" data-target="testimonials">Testimonials</a>
+                <a href="#testimonials" class="nav-link mobile-nav-link text-center py-2"
+                    data-target="testimonials">Testimonials</a>
                 <a href="#contact" class="nav-link mobile-nav-link text-center py-2" data-target="contact">Contact</a>
             </div>
         </div>
@@ -113,69 +131,83 @@
     <main class="container mx-auto max-w-6xl px-4">
 
         <!-- Home (Hero) Section -->
-        <section id="home" class="min-h-screen flex items-center pt-32 pb-16 overflow-hidden">
+        <section id="home" class="min-h-screen flex items-center pt-32 pb-16 overflow-hidden relative">
+            <!-- Background Gradient Orb -->
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px] -z-10 pointer-events-none">
+            </div>
+
             <!-- Grid for layout -->
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center w-full">
-                
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center w-full relative z-10">
+
                 <!-- Text Content: order-last on mobile, order-first on desktop -->
                 <div class="md:col-span-3 order-last md:order-first">
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight" data-aos="fade-down" data-aos-delay="100">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight" data-aos="fade-down"
+                        data-aos-delay="100">
                         Mazen Ehab
                     </h1>
-                    <h2 class="text-2xl md:text-4xl font-bold my-4" style="color: var(--color-primary);" data-aos="fade-down" data-aos-delay="200">
+                    <h2 class="text-2xl md:text-4xl font-bold my-4 bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent-1)]"
+                        data-aos="fade-down" data-aos-delay="200">
                         Video Editor & Motion Graphics Artist
                     </h2>
-                    <p class="max-w-2xl text-lg md:text-xl" style="color: var(--color-text-muted);" data-aos="fade-up" data-aos-delay="300">
-                        I bring ideas to life through dynamic video content. An engineering student with a passion for storytelling, specializing in short-form content and promotional videos using After Effects and Premiere Pro.
+                    <p class="max-w-2xl text-lg md:text-xl" style="color: var(--color-text-muted);" data-aos="fade-up"
+                        data-aos-delay="300">
+                        I bring ideas to life through dynamic video content. An engineering student with a passion for
+                        storytelling, specializing in short-form content and promotional videos using After Effects and
+                        Premiere Pro.
                     </p>
-                    <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4" data-aos="fade-up" data-aos-delay="400">
-                        <a href="#work" 
-                            class="text-center px-10 py-3 rounded-full bg-[#8CCDEB] text-[#0B1D51] font-semibold shadow-md 
-                                hover:shadow-lg hover:bg-[#7BC5E8] transition-all duration-300 transform hover:scale-105 active:scale-95 
-                                inline-block overflow-visible">
+                    <div class="mt-10 flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <a href="#work" class="btn-primary text-center">
                             View My Work
                         </a>
 
-                        <a href="#contact" 
-                            class="text-center px-10 py-3 rounded-full border-2 border-[#8CCDEB] text-[#8CCDEB] font-semibold shadow-md 
-                                hover:bg-[#8CCDEB] hover:text-[#0B1D51] hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95 
-                                inline-block overflow-visible">
+                        <a href="#contact" class="btn-secondary text-center">
                             Contact Me
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Profile Image: order-first on mobile, order-last on desktop -->
-                <div class="md:col-span-2 flex items-center justify-center md:justify-center order-first md:order-last" data-aos="fade-left" data-aos-delay="500">
+                <div class="md:col-span-2 flex items-center justify-center md:justify-center order-first md:order-last"
+                    data-aos="fade-left" data-aos-delay="500">
                     <div class="relative w-64 h-64 md:w-80 md:h-80">
                         <!-- Breathing Glow Effect -->
-                        <div class="absolute inset-0 rounded-full pulse-shadow" style="background-color: var(--color-primary);"></div>
+                        <div class="absolute inset-0 rounded-full pulse-shadow"
+                            style="background-color: var(--color-primary);"></div>
                         <!-- Profile Image -->
-                        <img src="Mazenn Ehab.jpg" alt="Mazen Ehab Profile Portrait" class="relative w-full h-full object-cover rounded-full border-4 shadow-xl" style="border-color: var(--color-primary);">
+                        <img src="Mazenn Ehab.jpg" alt="Mazen Ehab Profile Portrait"
+                            class="relative w-full h-full object-cover rounded-full border-4 shadow-xl"
+                            style="border-color: var(--color-primary);">
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- About Me Section -->
         <section id="about" class="py-24 scroll-mt-20 overflow-hidden">
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">About Me</h2>
                 <p class="text-lg mb-4" style="color: var(--color-text-muted);" data-aos="fade-up" data-aos-delay="100">
-                    Hello! I'm Mazen, an engineering student based in Egypt. While I'm pursuing a technical degree, my true passion lies in creative video production.
+                    Hello! I'm Mazen, an engineering student based in Egypt. While I'm pursuing a technical degree, my
+                    true passion lies in creative video production.
                 </p>
                 <p class="text-lg mb-8" style="color: var(--color-text-muted);" data-aos="fade-up" data-aos-delay="200">
-                    I thrive on turning raw footage into compelling stories that capture attention and drive engagement. From fast-paced social media reels to professional event recaps, I'm dedicated to delivering high-quality results.
+                    I thrive on turning raw footage into compelling stories that capture attention and drive engagement.
+                    From fast-paced social media reels to professional event recaps, I'm dedicated to delivering
+                    high-quality results.
                 </p>
 
                 <!-- Visual Separator -->
                 <div class="my-12" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="inline-block h-1.5 w-24 rounded-full" style="background-color: var(--color-primary);"></div>
+                    <div class="inline-block h-1.5 w-24 rounded-full" style="background-color: var(--color-primary);">
+                    </div>
                 </div>
 
                 <h3 class="text-2xl font-semibold mb-8" data-aos="fade-up" data-aos-delay="400">My Toolkit</h3>
                 <!-- Tools List -->
-                <ul class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8" style="color: var(--color-text);">
+                <ul class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8"
+                    style="color: var(--color-text);">
                     <li class="flex items-center justify-center text-lg" data-aos="fade-up" data-aos-delay="500">
                         <i data-lucide="check-circle" class="w-5 h-5 mr-3" style="color: var(--color-primary);"></i>
                         Adobe After Effects
@@ -191,23 +223,30 @@
                 </ul>
             </div>
         </section>
-        
+
         <!-- Work Section -->
         <section id="work" class="py-24 scroll-mt-20 overflow-hidden"> <!-- Added scroll-mt-20 for header offset -->
             <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center" data-aos="fade-up">My Work</h2>
 
             <!-- Featured Project: Eventify -->
-            <div class="mb-16 p-6 md:p-8 rounded-lg" style="background-color: var(--color-bg-alt); border: 1px solid var(--color-border);" data-aos="zoom-in" data-aos-duration="500">
+            <div class="mb-16 p-6 md:p-8 rounded-lg"
+                style="background-color: var(--color-bg-alt); border: 1px solid var(--color-border);" data-aos="zoom-in"
+                data-aos-duration="500">
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="md:col-span-2">
                         <h3 class="text-2xl font-semibold" style="color: var(--color-primary);">Featured Project</h3>
                         <h4 class="text-xl md:text-2xl font-bold mt-2 mb-4">Video Producer - Eventify (Jeddah)</h4>
                         <p class="mb-4" style="color: var(--color-text-muted);">
-                            In a one-month contract with Eventify, I served as the primary video producer for their exhibitions in Jeddah. My role involved capturing event highlights, interviewing attendees, and producing a series of dynamic promotional videos for their social media channels.
+                            In a one-month contract with Eventify, I served as the primary video producer for their
+                            exhibitions in Jeddah. My role involved capturing event highlights, interviewing attendees,
+                            and producing a series of dynamic promotional videos for their social media channels.
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs font-medium px-3 py-1 rounded-full" style="background-color: var(--color-accent-1); color: white;">Event Videography</span>
-                            <span class="text-xs font-medium px-3 py-1 rounded-full" style="background-color: var(--color-accent-1); color: white;">Social Media Content</span>
+                            <span class="text-xs font-medium px-3 py-1 rounded-full"
+                                style="background-color: var(--color-accent-1); color: white;">Event Videography</span>
+                            <span class="text-xs font-medium px-3 py-1 rounded-full"
+                                style="background-color: var(--color-accent-1); color: white;">Social Media
+                                Content</span>
                         </div>
                     </div>
                     <div class="md:col-span-1">
@@ -223,52 +262,62 @@
             </div>
 
             <!-- videos worked on with high views -->
-            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">videos worked on with high views</h3>
+            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">videos worked on with high
+                views</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                
+
                 <!-- Portfolio Card 1 -->
-                <div class="portfolio-card rounded-lg overflow-hidden shadow-lg cursor-pointer group" data-modal-id="reel-1" data-aos="fade-up" data-aos-duration="500">
+                <div class="portfolio-card rounded-lg overflow-hidden shadow-lg cursor-pointer group"
+                    data-modal-id="reel-1" data-aos="fade-up" data-aos-duration="500">
                     <div class="relative">
-                        <img src="https://placehold.co/600x400/0B1D51/8CCDEB?text=Splate+App+Video" alt="Portfolio Item 1 Thumbnail" class="w-full h-64 object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <img src="https://placehold.co/600x400/0B1D51/8CCDEB?text=Splate+App+Video"
+                            alt="Portfolio Item 1 Thumbnail" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <i data-lucide="play-circle" class="w-16 h-16 text-white"></i>
                         </div>
                     </div>
                     <div class="p-5" style="background-color: var(--color-bg-alt);">
                         <h4 class="text-xl font-semibold mb-2">Event Promo Reel</h4>
-                        <p class="text-sm mb-3" style="color: var(--color-text-muted);">A fast-paced promotional video for a corporate event.</p>
-                        <span class="text-xs font-medium px-3 py-1 rounded-full" style="background-color: var(--color-primary); color: var(--color-primary-text);">Social Reel</span>
+                        <p class="text-sm mb-3" style="color: var(--color-text-muted);">A fast-paced promotional video
+                            for a corporate event.</p>
+                        <span class="text-xs font-medium px-3 py-1 rounded-full"
+                            style="background-color: var(--color-primary); color: var(--color-primary-text);">Social
+                            Reel</span>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Card 2 -->
-                <div class="portfolio-card rounded-lg overflow-hidden shadow-lg cursor-pointer group" data-modal-id="reel-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="portfolio-card rounded-lg overflow-hidden shadow-lg cursor-pointer group"
+                    data-modal-id="reel-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div class="relative">
-                        <img src="https://placehold.co/600x400/0B1D51/FFE3A9?text=Splate+App+Video" alt="Portfolio Item 2 Thumbnail" class="w-full h-64 object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <img src="https://placehold.co/600x400/0B1D51/FFE3A9?text=Splate+App+Video"
+                            alt="Portfolio Item 2 Thumbnail" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <i data-lucide="play-circle" class="w-16 h-16 text-white"></i>
                         </div>
                     </div>
                     <div class="p-5" style="background-color: var(--color-bg-alt);">
                         <h4 class="text-xl font-semibold mb-2">Product Demo Reel</h4>
-                        <p class="text-sm mb-3" style="color: var(--color-text-muted);">Engaging motion graphics highlighting product features.</p>
-                        <span class="text-xs font-medium px-3 py-1 rounded-full" style="background-color: var(--color-primary); color: var(--color-primary-text);">Motion Graphics</span>
+                        <p class="text-sm mb-3" style="color: var(--color-text-muted);">Engaging motion graphics
+                            highlighting product features.</p>
+                        <span class="text-xs font-medium px-3 py-1 rounded-full"
+                            style="background-color: var(--color-primary); color: var(--color-primary-text);">Motion
+                            Graphics</span>
                     </div>
-                </div>
-                
-                <!-- Add more portfolio cards here -->
-            </div>
         </section>
-
         <!-- Testimonials Section -->
-        <section id="testimonials" class="py-24 scroll-mt-20 overflow-hidden"> <!-- Added scroll-mt-20 for header offset -->
+        <section id="testimonials" class="py-24 scroll-mt-20 overflow-hidden">
+            <!-- Added scroll-mt-20 for header offset -->
             <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center" data-aos="fade-up">What Clients Say</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
+
                 <!-- Testimonial Card 1 -->
                 <div class="testimonial-card" data-aos="fade-right" data-aos-duration="500">
                     <div class="flex items-center mb-4">
-                        <img src="https://placehold.co/48x48/725CAD/FFFFFF?text=Y" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://placehold.co/48x48/725CAD/FFFFFF?text=Y" alt="Client Avatar"
+                            class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold">Yazan N.</h4>
                             <p class="text-sm" style="color: var(--color-text-muted);"> صاحب المشروع</p>
@@ -282,17 +331,19 @@
                         </div>
                     </div>
                     <p class="italic" style="color: var(--color-text-muted);">
-                        "ا.مازن من افضل الاشخاص على مستقل سرعه بالتواصل واكتمال العمل باسرع وقت ممكن دائماََ التعامل معاه ان شاءلله"
+                        "ا.مازن من افضل الاشخاص على مستقل سرعه بالتواصل واكتمال العمل باسرع وقت ممكن دائماََ التعامل
+                        معاه ان شاءلله"
                     </p>
                 </div>
-                
+
                 <!-- Testimonial Card 2 (Placeholder) -->
                 <div class="testimonial-card" data-aos="fade-left" data-aos-duration="500">
                     <div class="flex items-center mb-4">
-                        <img src="https://placehold.co/48x48/8CCDEB/0B1D51?text=A" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://placehold.co/48x48/8CCDEB/0B1D51?text=A" alt="Client Avatar"
+                            class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold">أحمد م.</h4>
-                            <p class="text-sm" style="color: var(--color-text-muted);"></p> صاحب المشروع</p>
+                            <p class="text-sm" style="color: var(--color-text-muted);"> صاحب المشروع</p>
                         </div>
                         <div class="ml-auto flex" style="color: var(--color-accent-2);">
                             <i data-lucide="star" class="w-5 h-5 fill-current"></i>
@@ -309,65 +360,76 @@
 
             </div>
             <div class="text-center mt-8">
-                <a href="https://mostaql.com/u/Mazen_Ehab_67/reviews" class="link-primary" target="_blank" rel="noopener noreferrer">
+                <a href="https://mostaql.com/u/Mazen_Ehab_67/reviews" class="link-primary" target="_blank"
+                    rel="noopener noreferrer">
                     View more reviews on Mostaql
                 </a>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-24 scroll-mt-20 text-center overflow-hidden"> <!-- Added scroll-mt-20 for header offset -->
+        <section id="contact" class="py-24 scroll-mt-20 text-center overflow-hidden relative">
+            <!-- Background Gradient Orb -->
+            <div
+                class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-[80px] -z-10 pointer-events-none">
+            </div>
+
             <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Get In Touch</h2>
-            <p class="text-lg max-w-xl mx-auto mb-8" style="color: var(--color-text-muted);" data-aos="fade-up" data-aos-delay="100">
-                I'm currently available for freelance projects. If you have a project in mind, a question, or just want to say hi, feel free to reach out.
+            <p class="text-lg max-w-xl mx-auto mb-8" style="color: var(--color-text-muted);" data-aos="fade-up"
+                data-aos-delay="100">
+                I'm currently available for freelance projects. If you have a project in mind, a question, or just want
+                to say hi, feel free to reach out.
             </p>
-                <div class="flex flex-row justify-center items-center gap-6 flex-wrap" data-aos="fade-up" data-aos-delay="200">
-                    <!-- WhatsApp Button -->
-                    <a href="https://wa.me/+201211726257" target="_blank" rel="noopener noreferrer"
-                        class="group relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-teal-400 to-cyan-500 
-                            flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-cyan-400/50">
-                        <i data-lucide="message-circle" class="w-6 h-6 text-white group-hover:rotate-12 transition-transform duration-300"></i>
-                        <span
-                            class="absolute opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-3 py-1 rounded-full 
-                                -bottom-10 transition-opacity duration-300 whitespace-nowrap">Chat on WhatsApp</span>
-                    </a>
+            <div class="flex flex-row justify-center items-center gap-6 flex-wrap" data-aos="fade-up"
+                data-aos-delay="200">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/+201211726257" target="_blank" rel="noopener noreferrer"
+                    class="group relative w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                    style="background: linear-gradient(135deg, #25D366, #128C7E); box-shadow: 0 10px 20px -5px rgba(37, 211, 102, 0.4);">
+                    <i data-lucide="message-circle"
+                        class="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span
+                        class="absolute opacity-0 group-hover:opacity-100 bg-black/80 text-white text-xs px-2 py-1 rounded-md -bottom-8 transition-opacity duration-300 whitespace-nowrap backdrop-blur-sm">WhatsApp</span>
+                </a>
 
-                    <!-- Instagram Button -->
-                    <a href="https://www.instagram.com/mazen_ehab.m/" target="_blank" rel="noopener noreferrer"
-                        class="group relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-[#8a3ab9] via-[#e95950] to-[#fccc63] 
-                            flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-[#e95950]/50">
-                        <i data-lucide="instagram" class="w-6 h-6 text-white group-hover:rotate-12 transition-transform duration-300"></i>
-                        <span
-                            class="absolute opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-3 py-1 rounded-full 
-                                -bottom-10 transition-opacity duration-300 whitespace-nowrap">Instagram Profile</span>
-                    </a>
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/mazen_ehab.m/" target="_blank" rel="noopener noreferrer"
+                    class="group relative w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                    style="background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCAF45); box-shadow: 0 10px 20px -5px rgba(253, 29, 29, 0.4);">
+                    <i data-lucide="instagram"
+                        class="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span
+                        class="absolute opacity-0 group-hover:opacity-100 bg-black/80 text-white text-xs px-2 py-1 rounded-md -bottom-8 transition-opacity duration-300 whitespace-nowrap backdrop-blur-sm">Instagram</span>
+                </a>
 
-                    <!-- Email Button -->
-                    <a href="mailto:anamazen67@gmail.com"
-                        class="group relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 
-                            flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-pink-400/50">
-                        <i data-lucide="mail" class="w-6 h-6 text-white group-hover:-rotate-12 transition-transform duration-300"></i>
-                        <span
-                            class="absolute opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-3 py-1 rounded-full 
-                                -bottom-10 transition-opacity duration-300 whitespace-nowrap">Send an Email</span>
-                    </a>
-                </div>
+                <!-- Email Button -->
+                <a href="mailto:anamazen67@gmail.com"
+                    class="group relative w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                    style="background: linear-gradient(135deg, var(--color-primary), var(--color-accent-1)); box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.4);">
+                    <i data-lucide="mail"
+                        class="w-8 h-8 text-white group-hover:-rotate-12 transition-transform duration-300"></i>
+                    <span
+                        class="absolute opacity-0 group-hover:opacity-100 bg-black/80 text-white text-xs px-2 py-1 rounded-md -bottom-8 transition-opacity duration-300 whitespace-nowrap backdrop-blur-sm">Email</span>
+                </a>
+            </div>
         </section>
 
     </main>
-    
+
     <!-- Footer -->
     <footer class="border-t" style="border-color: var(--color-border);">
         <div class="container mx-auto max-w-6xl px-4 py-8 text-center" style="color: var(--color-text-muted);">
             <div class="flex justify-center space-x-6 mb-4">
-                <!-- TODO: Update Social Links -->
-                <a href="https://www.instagram.com/mazen_ehab.m/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--color-primary)] transition-colors">
+                <a href="https://www.instagram.com/mazen_ehab.m/" aria-label="Instagram" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-[var(--color-primary)] transition-colors">
                     <i data-lucide="instagram" class="w-6 h-6"></i>
                 </a>
-                <a href="https://wa.me/+201211726257" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--color-primary)] transition-colors">
+                <a href="https://wa.me/+201211726257" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-[var(--color-primary)] transition-colors">
                     <i data-lucide="message-circle" class="w-6 h-6"></i>
                 </a>
-                <a href="mailto:anamazen67@gmail.com" aria-label="Email" class="hover:text-[var(--color-primary)] transition-colors">
+                <a href="mailto:anamazen67@gmail.com" aria-label="Email"
+                    class="hover:text-[var(--color-primary)] transition-colors">
                     <i data-lucide="mail" class="w-6 h-6"></i>
                 </a>
             </div>
@@ -378,12 +440,15 @@
     </footer>
 
     <!-- Portfolio Modal -->
-    <div id="portfolio-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 hidden" style="background-color: rgba(0, 0, 0, 0.8);">
-        <div id="modal-content" class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl" style="background-color: var(--color-bg);">
-            <button id="modal-close-btn" class="absolute -top-4 -right-4 md:top-4 md:right-4 z-10 p-2 rounded-full" style="background-color: var(--color-primary);" aria-label="Close modal">
+    <div id="portfolio-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 hidden"
+        style="background-color: rgba(0, 0, 0, 0.8);">
+        <div id="modal-content" class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl"
+            style="background-color: var(--color-bg);">
+            <button id="modal-close-btn" class="absolute -top-4 -right-4 md:top-4 md:right-4 z-10 p-2 rounded-full"
+                style="background-color: var(--color-primary);" aria-label="Close modal">
                 <i data-lucide="x" class="w-6 h-6" style="color: var(--color-primary-text);"></i>
             </button>
-            
+
             <div class="p-6 md:p-8">
                 <!-- Embed Container -->
                 <div id="modal-embed-container" class="mb-6 rounded-lg overflow-hidden">
@@ -394,19 +459,22 @@
                     <!-- Tags will be injected here by JS -->
                 </div>
                 <p id="modal-description" class="text-lg mb-6" style="color: var(--color-text-muted);"></p>
-                
-                <div class="grid grid-cols-2 gap-6" style="border-top: 1px solid var(--color-border); padding-top: 1.5rem;">
+
+                <div class="grid grid-cols-2 gap-6"
+                    style="border-top: 1px solid var(--color-border); padding-top: 1.5rem;">
                     <div>
-                        <h4 class="text-sm font-semibold uppercase mb-2" style="color: var(--color-text-muted);">Role</h4>
+                        <h4 class="text-sm font-semibold uppercase mb-2" style="color: var(--color-text-muted);">Role
+                        </h4>
                         <p id="modal-role" class="text-lg"></p>
                     </div>
                     <div>
-                        <h4 class="text-sm font-semibold uppercase mb-2" style="color: var(--color-text-muted);">Tools Used</h4>
+                        <h4 class="text-sm font-semibold uppercase mb-2" style="color: var(--color-text-muted);">Tools
+                            Used</h4>
                         <p id="modal-tools" class="text-lg"></p>
                     </div>
                 </div>
-                
-                 <div class="mt-6 text-center" style="border-top: 1px solid var(--color-border); padding-top: 1.5rem;">
+
+                <div class="mt-6 text-center" style="border-top: 1px solid var(--color-border); padding-top: 1.5rem;">
                     <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="link-primary text-lg">
                         View on Instagram
                         <i data-lucide="arrow-up-right" class="inline w-4 h-4"></i>
@@ -422,7 +490,7 @@
     <!-- App Logic Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            
+
             // --- Data ---
             // This data is used to populate the modal.
             // You can add more items here.
@@ -430,16 +498,7 @@
                 "reel-1": {
                     title: "Event Promo Reel",
                     description: "A fast-paced, high-energy promotional video designed to capture the excitement of a corporate event. This reel was used for social media promotion to drive future attendance.",
-                    embed_code: `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMy8hKJTCrJ/?igsh=MXJ4OWs3aWgxNTRmdw==" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:8px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DMy8hKJTCrJ/?igsh=MXJ4OWs3aWgxNTRmdw==" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3.5px) translateY(1.5px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="httpsm://www.instagram.com/reel/DMy8hKJTCrJ/?igsh=MXJ4OWs3aWgxNTRmdw==" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Mazen Ehab (@your-profile)</a></p></div></blockquote>`,
-                    tags: ["Event Promo", "Social Reel"],
-                    role: "Video Editor",
-                    tools: "Premiere Pro, After Effects",
-                    link: "https://www.instagram.com/reel/DMy8hKJTCrJ/"
-                },
-                "reel-2": {
-                    title: "Product Demo Reel",
-                    description: "Engaging motion graphics highlighting product features. This reel was designed to be informative and visually appealing, driving user interest.",
-                    embed_code: `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMy7t70TOYb/?igsh=ZGlsejVucmY2NDA5" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:8px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DMy7t70TOYb/?igsh=ZGlsejVucmY2NDA5" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3.5px) translateY(1.5px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DMy7t70TOYb/?igsh=ZGlsejVucmY2NDA5" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Mazen Ehab (@your-profile)</a></p></div></blockquote>`,
+                    embed_code: `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMy8hKJTCrJ/?igsh=MXJ4OWs3aWgxNTRmdw==" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:8px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DMy8hKJTCrJ/?igsh=MXJ4OWs3aWgxNTRmdw==" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3.5px) translateY(1.5px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DMy7t70TOYb/?igsh=ZGlsejVucmY2NDA5" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Mazen Ehab (@your-profile)</a></p></div></blockquote>`,
                     tags: ["Motion Graphics", "Product Demo", "Social Reel"],
                     role: "Motion Graphics Artist",
                     tools: "After Effects, Photoshop",
@@ -449,14 +508,14 @@
 
             // --- Lucide Icons ---
             lucide.createIcons();
-            
+
             // --- AOS Initialization ---
             AOS.init({
                 duration: 600, // Animation duration
                 once: true,     // Whether animation should happen only once
                 offset: 50      // Offset (in px) from the original trigger point
             });
-            
+
             // --- Current Year for Footer ---
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
@@ -493,7 +552,7 @@
                 mobileMenu.classList.toggle('block', !isOpen);
                 mobileMenuBtn.classList.toggle('menu-open', !isOpen);
             });
-            
+
             mobileNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('hidden');
@@ -541,7 +600,7 @@
             const modalRole = document.getElementById('modal-role');
             const modalTools = document.getElementById('modal-tools');
             const modalLink = document.getElementById('modal-link');
-            
+
             const portfolioCards = document.querySelectorAll('.portfolio-card');
 
             const openModal = (id) => {
@@ -553,9 +612,9 @@
                 modalRole.textContent = data.role;
                 modalTools.textContent = data.tools;
                 modalLink.href = data.link;
-                
+
                 modalEmbedContainer.innerHTML = data.embed_code;
-                
+
                 modalTags.innerHTML = '';
                 data.tags.forEach(tag => {
                     const tagEl = document.createElement('span');
@@ -602,5 +661,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>
